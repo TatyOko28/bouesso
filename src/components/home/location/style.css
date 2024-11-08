@@ -1,0 +1,94 @@
+.location .box {
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden; /* Ensure the child elements are clipped to the border radius */
+}
+
+.location img {
+  border-radius: 5px;
+  width: 100%; /* Ensure the image covers the entire box */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.location .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 100%;
+  color: #fff;
+  z-index: 222;
+  text-align: center; /* Center the text */
+}
+
+.location .overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 340px;
+  height: 210px;
+  background: rgb(15 28 47 / 30%);
+  z-index: -1;
+  margin: 20px;
+  border-radius: 5px;
+}
+
+.location h5 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.location label {
+  color: #fff;
+  margin-right: 20px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 1024px) {
+  .location .overlay {
+    height: 220px;
+  }
+  .location .overlay::after {
+    width: 300px;
+    height: 190px;
+  }
+  .location h5 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .location .overlay {
+    height: 200px;
+  }
+  .location .overlay::after {
+    width: 280px;
+    height: 170px;
+  }
+  .location h5 {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .location .overlay {
+    height: 180px;
+  }
+  .location .overlay::after {
+    width: 240px;
+    height: 150px;
+    margin: 10px;
+  }
+  .location h5 {
+    font-size: 12px;
+  }
+  .location label {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}

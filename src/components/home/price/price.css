@@ -1,0 +1,117 @@
+.price {
+  text-align: center;
+  padding: 20px; /* Adding padding for spacing */
+}
+
+.price .content {
+  display: flex;
+  flex-wrap: wrap; /* Allowing flex items to wrap */
+  justify-content: space-between; /* Spacing between items */
+}
+
+.price .content .box {
+  width: 31.5%;
+  padding: 30px;
+  border-radius: 10px;
+  margin-bottom: 20px; /* Adding margin for spacing */
+}
+
+.price button {
+  margin-bottom: 20px;
+}
+
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+  display: none;
+}
+
+.price h3 {
+  font-size: 22px;
+}
+
+.price h1 {
+  font-size: 60px;
+}
+
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.price ul {
+  margin-top: 40px;
+}
+
+.price ul li {
+  display: flex;
+  align-items: center; /* Centering items vertically */
+  margin-bottom: 20px;
+}
+
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-color: #f0f0f0; /* Adding background color for visibility */
+}
+
+.price .btn5 {
+  width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .price h1 {
+    font-size: 50px;
+  }
+  .price h1 span {
+    font-size: 25px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column; /* Stacking items vertically */
+  }
+  .price .content .box {
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjusting padding */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Adjusting margin */
+  }
+  .price h1 {
+    font-size: 40px;
+  }
+  .price h1 span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .price .content .box {
+    padding: 15px; /* Further reducing padding */
+    margin-bottom: 15px; /* Adjusting margin */
+  }
+  .price h3 {
+    font-size: 18px; /* Reducing font size */
+  }
+  .price h1 {
+    font-size: 30px; /* Further reducing font size */
+  }
+  .price h1 span {
+    font-size: 18px; /* Further reducing font size */
+  }
+  .price ul {
+    margin-top: 30px; /* Adjusting margin */
+  }
+  .price ul li {
+    margin-bottom: 15px; /* Adjusting margin */
+  }
+  .price label {
+    width: 25px; /* Adjusting size */
+    height: 25px; /* Adjusting size */
+    line-height: 25px; /* Adjusting line height */
+    margin-right: 15px; /* Adjusting margin */
+  }
+}

@@ -1,0 +1,65 @@
+.recent .text {
+  padding: 30px;
+}
+
+.recent .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+
+.recent .category i {
+  font-size: 20px;
+  color: #bec7d8;
+}
+
+.recent p {
+  color: #72809d;
+}
+
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  padding: 10px 30px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .recent .text {
+    padding: 20px; /* Reduce padding for smaller screens */
+  }
+  .recent .category span {
+    padding: 3px 12px; /* Adjust padding */
+    font-size: 12px; /* Adjust font size */
+  }
+  .recent .category i {
+    font-size: 18px; /* Adjust icon size */
+  }
+  .recent p {
+    font-size: 14px; /* Adjust paragraph font size */
+  }
+  .recent .button {
+    padding: 8px 20px; /* Adjust padding */
+  }
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 480px) {
+  .recent .text {
+    padding: 15px; /* Further reduce padding for very small screens */
+  }
+  .recent .category span {
+    padding: 2px 10px; /* Further adjust padding */
+    font-size: 11px; /* Further adjust font size */
+  }
+  .recent .category i {
+    font-size: 16px; /* Further adjust icon size */
+  }
+  .recent p {
+    font-size: 13px; /* Further adjust paragraph font size */
+  }
+  .recent .button {
+    padding: 6px 15px; /* Further adjust padding */
+  }
+}

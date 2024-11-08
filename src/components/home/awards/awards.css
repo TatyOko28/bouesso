@@ -1,0 +1,105 @@
+.awards {
+  background-color: #122947;
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px; /* Adding padding for spacing */
+}
+
+.awards .heading {
+  display: flex;
+  flex-direction: column-reverse;
+  margin-bottom: 20px; /* Adding margin for spacing */
+}
+
+.awards .heading p {
+  color: rgb(126, 196, 40);
+  font-size: 18px; /* Adjusting font size */
+}
+
+.awards .heading h1 {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  margin: 10px 0; /* Adding margin for spacing */
+}
+
+.awards .icon {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  margin: auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 4% 50%;
+  font-size: 32px;
+  color: #ffffff;
+}
+
+.awards h1 {
+  font-size: 50px;
+  margin: 20px 0; /* Adding margin for spacing */
+}
+
+.awards p {
+  color: grey;
+  font-size: 16px; /* Adjusting font size */
+}
+
+.content.grid4.mtop {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .awards .heading p {
+    font-size: 16px; /* Reduce font size */
+  }
+  .awards .heading h1 {
+    font-size: 28px; /* Reduce font size */
+  }
+  .awards .icon {
+    width: 80px; /* Reduce icon size */
+    height: 80px; /* Reduce icon size */
+    line-height: 80px; /* Adjust line height */
+    font-size: 28px; /* Reduce font size */
+    margin-top: 30px; /* Adjust margin */
+  }
+  .awards h1 {
+    font-size: 40px; /* Reduce font size */
+  }
+  .awards p {
+    font-size: 14px; /* Reduce font size */
+  }
+  .content.grid4.mtop {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for tablets */
+  }
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 480px) {
+  .awards .heading p {
+    font-size: 14px; /* Further reduce font size */
+  }
+  .awards .heading h1 {
+    font-size: 24px; /* Further reduce font size */
+  }
+  .awards .icon {
+    width: 60px; /* Further reduce icon size */
+    height: 60px; /* Further reduce icon size */
+    line-height: 60px; /* Adjust line height */
+    font-size: 24px; /* Further reduce font size */
+    margin-top: 20px; /* Adjust margin */
+  }
+  .awards h1 {
+    font-size: 30px; /* Further reduce font size */
+  }
+  .awards p {
+    font-size: 12px; /* Further reduce font size */
+  }
+  .content.grid4.mtop {
+    grid-template-columns: repeat(2, 1fr); /* Adjust grid for small devices */
+    grid-gap: 10px; /* Adjust grid gap for small devices */
+  }
+}

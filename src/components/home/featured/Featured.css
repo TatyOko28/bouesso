@@ -1,0 +1,41 @@
+.featured .box {
+  box-shadow: 0 0 20px 0 rgb(112 121 138 / 18%);
+  border-radius: 6px;
+  text-align: center;
+  padding: 30px;
+  cursor: pointer;
+  margin: 20px; /* Adding margin for spacing */
+  transition: transform 0.3s ease; /* Adding transition for hover effect */
+}
+.featured .box:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+.featured img {
+  width: 65px;
+  height: 65px;
+  margin: auto;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  .featured .box {
+    padding: 20px; /* Reduce padding for smaller screens */
+    margin: 15px; /* Adjust margin */
+  }
+  .featured img {
+    width: 50px; /* Adjust image size */
+    height: 50px; /* Adjust image size */
+  }
+}
+
+/* Media query for small devices */
+@media screen and (max-width: 480px) {
+  .featured .box {
+    padding: 15px; /* Further reduce padding for very small screens */
+    margin: 10px; /* Further adjust margin */
+  }
+  .featured img {
+    width: 40px; /* Further adjust image size */
+    height: 40px; /* Further adjust image size */
+  }
+}
